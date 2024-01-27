@@ -25,8 +25,25 @@ body {
 .button-box {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 8px;
+  flex-direction: column;
+}
+
+.color-randomizer {
+  max-width: 120px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  margin-left: 120px;
+  cursor: pointer;
+}
+
+.is-active {
+  background: rgb(249,5,5);
+  background: linear-gradient(90deg, rgba(249,5,5,1) 5%, rgba(255,94,0,1) 17%, rgba(255,230,0,1) 31%, rgba(44,255,0,1) 46%, rgba(0,14,255,1) 63%, rgba(179,0,255,1) 80%, rgba(255,0,172,1) 100%);
+  font-weight: 900;
 }
 
 .set-grid {
@@ -37,11 +54,11 @@ body {
   cursor: pointer;
   white-space: nowrap;
   flex: 1;
-  height: 40px;
+  max-height: 40px;
   max-width: 120px;
-  margin-top: 100px;
   font-weight: 700;
   border-radius: 8px;
+  margin-left: 120px;
 }
 
 .space-taker {
