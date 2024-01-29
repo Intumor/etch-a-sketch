@@ -38,6 +38,11 @@ gradualColorButton.addEventListener('click', () => {
   }
 });
 
+const ResetButton = document.querySelector('.reset-grid');
+ResetButton.addEventListener('click', () => {
+  changeGrid(grid, subGrid);
+})
+
 const changeGrid = (grid, subGrid) => {
   holder.innerHTML = '';
 
