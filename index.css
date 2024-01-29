@@ -6,13 +6,12 @@
 
 body {
   height: 100vh;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-between;
 }
 
 .grid-holder {
-  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,10 +39,27 @@ body {
   cursor: pointer;
 }
 
+.gradual-coloring {
+  max-width: 120px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  margin-left: 120px;
+  cursor: pointer;
+}
+
 .is-active {
   background: rgb(249,5,5);
   background: linear-gradient(90deg, rgba(249,5,5,1) 5%, rgba(255,94,0,1) 17%, rgba(255,230,0,1) 31%, rgba(44,255,0,1) 46%, rgba(0,14,255,1) 63%, rgba(179,0,255,1) 80%, rgba(255,0,172,1) 100%);
   font-weight: 900;
+}
+
+.is-gradual {
+  background: rgb(117,117,117);
+  background: linear-gradient(90deg, rgba(117,117,117,1) 0%, rgba(0,0,0,1) 84%);
+  color: white;
+  border: 1px solid white;
 }
 
 .set-grid {
@@ -59,6 +75,18 @@ body {
   font-weight: 700;
   border-radius: 8px;
   margin-left: 120px;
+}
+
+.reset-grid {
+  max-width: 120px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  margin-left: 120px;
+  cursor: pointer;
+  background-color: rgb(255, 80, 80);
+  color: rgb(0, 0, 0);
 }
 
 .space-taker {
