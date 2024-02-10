@@ -1,4 +1,5 @@
 const holder = document.querySelector('.grid-holder');
+console.log('change')
 let grid = 16;
 let subGrid = Math.round((230 * grid) / 100);
 const setUpButton = document.querySelector('.set-grid');
